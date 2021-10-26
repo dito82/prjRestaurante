@@ -1,50 +1,29 @@
 package entidade;
 
 public class Pedidos {
-	
-	private String alimento;
-	private String bebida;
-	private Double valorAlimento;
-	private Double valorBebida;
-	
-	public Pedidos(String alimento, String bebida, Double valorAlimento, Double valorBebida) {
-		this.alimento = alimento;
-		this.bebida = bebida;
-		this.valorAlimento = valorAlimento;
-		this.valorBebida = valorBebida;
+
+	private String pedido;
+	private Double valorTotal;
+
+	public Pedidos(String pedido, Double valorTotal) {
+		this.pedido = pedido;
+		this.valorTotal = valorTotal;
 	}
 
-	public String getAlimento() {
-		return alimento;
+	public String getPedido() {
+		return pedido;
 	}
 
-	public void setAlimento(String alimento) {
-		this.alimento = alimento;
+	public void setPedido(String pedido) {
+		this.pedido = pedido;
 	}
 
-	public String getBebida() {
-		return bebida;
+	public Double getValorTotal() {
+		return valorTotal;
 	}
 
-	public void setBebida(String bebida) {
-		this.bebida = bebida;
+	public void setValorTotal(Double valorTotal) {
+		this.valorTotal = valorTotal;
 	}
 
-	public Double getValorAlimento() {
-		return valorAlimento;
-	}
-
-	public void setValorAlimento(Double valorAlimento) {
-		this.valorAlimento = valorAlimento;
-	}
-
-	public Double getValorBebida() {
-		return valorBebida;
-	}
-
-	public void setValorBebida(Double valorBebida) {
-		this.valorBebida = valorBebida;
-	}
-	
-	
 }
